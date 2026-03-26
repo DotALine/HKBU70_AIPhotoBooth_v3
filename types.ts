@@ -22,7 +22,6 @@ export enum AppState {
   SELECT_BACKGROUND = 'SELECT_BACKGROUND',
   GENERATING = 'GENERATING',
   RESULT = 'RESULT',
-  DEVELOPER_PORTAL = 'DEVELOPER_PORTAL',
 }
 
 export interface ProcessingError {

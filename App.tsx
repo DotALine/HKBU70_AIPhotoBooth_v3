@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { UploadSection } from './components/UploadSection';
 import { BackgroundSelector, DEFAULT_BACKGROUNDS } from './components/BackgroundSelector';
-import { DeveloperPortal } from './components/DeveloperPortal';
 import { Button } from './components/Button';
 import { generateCompositeScene } from './services/geminiService';
 import { addWatermarkToImage } from './services/imageUtils';
@@ -295,12 +294,6 @@ const App: React.FC = () => {
           </div>
           
           <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-4">
-              <button onClick={() => setAppState(AppState.DEVELOPER_PORTAL)} className="text-gray-300 hover:text-hkbu-navy">
-                <Shield size={20} />
-              </button>
-            </div>
-
             {/* Hamburger Button (Mobile Landscape - Right) */}
             {windowWidth >= 640 && (
               <button 
@@ -323,28 +316,13 @@ const App: React.FC = () => {
               >
                 <ImageIcon size={20} /> Main Page
               </button>
-              <button 
-                onClick={() => { setAppState(AppState.DEVELOPER_PORTAL); setIsMenuOpen(false); }}
-                className="flex items-center gap-3 px-4 py-3 text-hkbu-navy font-roboto font-bold hover:bg-hkbu-navy/5 rounded-xl transition-colors"
-              >
-                <Shield size={20} /> Developer Portal
-              </button>
             </div>
           </div>
         )}
       </header>
 
       <main className="container mx-auto px-4 py-20 relative z-10">
-        {appState === AppState.DEVELOPER_PORTAL ? (
-          <DeveloperPortal 
-            currentScenes={backgrounds}
-            onBack={() => setAppState(AppState.UPLOAD)}
-            onUpdateScenes={(newScenes) => {
-              setBackgrounds(newScenes);
-              localStorage.setItem('scene_composer_backgrounds', JSON.stringify(newScenes));
-            }}
-          />
-        ) : appState === AppState.GENERATING ? (
+        {appState === AppState.GENERATING ? (
           <div className="max-w-md mx-auto text-center space-y-8 animate-fade-in py-20 bg-white/80 backdrop-blur-md p-10 rounded-[3rem] border border-white/40 shadow-2xl">
             <div className="relative">
               <div className="w-32 h-32 border-4 border-hkbu-navy/10 border-t-hkbu-navy rounded-full animate-spin mx-auto"></div>
