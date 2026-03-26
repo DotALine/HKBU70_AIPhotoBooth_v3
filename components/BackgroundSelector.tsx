@@ -8,42 +8,42 @@ export const DEFAULT_BACKGROUNDS: BackgroundScene[] = [
   {
     id: 'hk-baptist-campus',
     name: 'Hong Kong Baptist College Campus',
-    url: 'https://image2url.com/r2/default/images/1774440733595-71f712e9-8de6-440e-9085-a00c49d2c0e9.jpg',
+    url: 'https://cdn.phototourl.com/free/2026-03-26-883b6a71-1ec6-41c2-9a76-2f60c7637f15.jpg',
     description: 'The historic campus of Hong Kong Baptist College.',
     prompt: 'Match the lighting, people positioning, and vintage effect of the Hong Kong Baptist College Campus Sample. The subjects should look like they were part of the original vintage photograph.'
   },
   {
     id: 'academic-hall',
     name: 'Academic Community Hall',
-    url: 'https://image2url.com/r2/default/images/1774440406280-1c2f027d-7c21-4d41-84d3-5f6215083b0a.jpeg',
+    url: 'https://cdn.phototourl.com/free/2026-03-26-b988354c-a494-4f7a-bc1e-48e322fa42c0.png',
     description: 'The Academic Community Hall, a landmark of the university.',
     prompt: 'The people in the image should appear as if they are taking a selfie. Apply a yellowish, vintage color tone to the people to match the background aesthetic.'
   },
   {
     id: 'campus-1980s',
     name: 'Hong Kong Baptist College Campus in 1980s',
-    url: 'https://image2url.com/r2/default/images/1774440757381-75fda568-cc46-46a0-bbed-c21865cc7d8a.jpg',
+    url: 'https://cdn.phototourl.com/free/2026-03-26-0ecad0a4-81ac-4e93-953a-5c815e5c8d61.jpg',
     description: 'A nostalgic look at the campus in the 1980s.',
     prompt: 'Apply a muted, slightly warm color cast typical of aged color film or a scanned vintage photograph: desaturated creams, browns, and warm greys should dominate. Concrete surfaces should be warm grey to beige with weathered darker streaks and stains. Accents of mustard-yellow/tan on walls and vertical cylinders. Vegetation should be muted green. The people should match this vintage, desaturated aesthetic perfectly.'
   },
   {
     id: 'cs-tse-hall',
     name: 'C. S. Tse Memorial Hall',
-    url: 'https://image2url.com/r2/default/images/1774440578028-614ac644-27b4-413f-a1cc-5ffc8d9d86c3.jpg',
+    url: 'https://cdn.phototourl.com/free/2026-03-26-ada7eaf4-2482-42fb-bea8-ed3e9a037b21.jpg',
     description: 'The C. S. Tse Memorial Hall.',
     prompt: 'The people should be cropped to half-body, standing, and facing the camera directly.'
   },
   {
     id: 'low-rise-buildings',
     name: 'Low-Rise Buildings',
-    url: 'https://image2url.com/r2/default/images/1774440709916-5f3cac44-d9dc-4e00-aedf-b0fb3f6bc5a6.jpg',
+    url: 'https://cdn.phototourl.com/free/2026-03-26-70d787f0-2a62-4298-bda4-bd4cc179bf2c.jpg',
     description: 'The low-rise buildings of the campus.',
     prompt: 'Ensure the people are scaled and lit naturally to match the low-rise building environment.'
   },
   {
     id: 'indoor-sports-ground',
     name: 'Renfrew Road Campus Indoor Sports Ground',
-    url: 'https://image2url.com/r2/default/images/1774440813043-15d742c2-9984-46df-8059-55c262d8223d.jpg',
+    url: 'https://cdn.phototourl.com/free/2026-03-26-9477353c-e6b6-469a-a069-51535682f40e.jpg',
     description: 'The indoor sports ground at Renfrew Road Campus.',
     prompt: 'Match the indoor lighting and sports ground environment for a realistic composite.'
   }
